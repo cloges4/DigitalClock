@@ -13,7 +13,7 @@ body {
   font-family: "Wallpoet", cursive;
 }
 
-.clock {
+#clock {
   display: flex;
   border: 20px solid black;
   padding: 10px 20px;
