@@ -4,10 +4,13 @@ const second = document.getElementById("second");
 
 const digitalClock = () => {
   const currentDate = new Date();
+  const currentHour = currentDate.getHours();
   const currentMinute = currentDate.getMinutes();
   const currentSecond = currentDate.getSeconds();
 
-  hour.textContent = currentDate.getHours();
+  if (currentHour > 12) {
+    hour.textContent = currentHour - 12;
+  }
 
   // add a leading zero to minute of single digit
   if (currentMinute < 10) {
