@@ -15,10 +15,29 @@ body {
 
 #clock {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 20px solid black;
-  padding: 10px 20px;
+  height: 150px;
+  width: 450px;
+  position: relative;
 }
 
 .digits {
   font-size: 4rem;
 }
+
+#pm {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#am {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* //TODO  Fix clock box so that it does not change size based off number sizes
+//TODO finish styling page to look Good */
