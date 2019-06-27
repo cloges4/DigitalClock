@@ -10,6 +10,8 @@ const digitalClock = () => {
 
   if (currentHour > 12) {
     hour.textContent = currentHour - 12;
+  } else {
+    hour.textContent = currentHour;
   }
 
   // add a leading zero to minute of single digit
@@ -31,5 +33,4 @@ setInterval(digitalClock, 1000);
 
 digitalClock();
 
-//TODO  Fix clock box so that it does not change size based off number sizes
-//TODO finish styling page to look Good
+// TODO toggle am and pm
