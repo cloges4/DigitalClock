@@ -39,5 +39,9 @@ body {
   top: 0;
 }
 
+.hide {
+  display: none;
+}
+
 /* //TODO  Fix clock box so that it does not change size based off number sizes
 //TODO finish styling page to look Good */
