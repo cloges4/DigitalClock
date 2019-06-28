@@ -1,6 +1,18 @@
 const hour = document.getElementById("hour");
 const minute = document.getElementById("minute");
 const second = document.getElementById("second");
+const am = document.getElementById("am");
+const pm = document.getElementById("pm");
+
+const amPm = () => {
+  if (new Date().getHours() > 11) {
+    pm.classList.remove("hide");
+    am.classList.add("hide");
+  } else {
+    am.classList.remove("hide");
+    pm.classList.add("hide");
+  }
+};
 
 const digitalClock = () => {
   const currentDate = new Date();
@@ -8,6 +20,7 @@ const digitalClock = () => {
   const currentMinute = currentDate.getMinutes();
   const currentSecond = currentDate.getSeconds();
 
+  //converts time to 12 hour format
   if (currentHour > 12) {
     hour.textContent = currentHour - 12;
   } else {
@@ -27,10 +40,10 @@ const digitalClock = () => {
   } else {
     second.textContent = currentSecond;
   }
+
+  amPm();
 };
 
 setInterval(digitalClock, 1000);
 
 digitalClock();
-
-// TODO toggle am and pm
