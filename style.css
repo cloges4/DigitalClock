@@ -4,7 +4,15 @@
 
 body {
   height: 100vh;
-  background: teal;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,31 +25,40 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #3c1518;
   border: 20px solid black;
-  height: 150px;
-  width: 450px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  height: 165px;
+  width: 475px;
   position: relative;
 }
 
 .digits {
   font-size: 4rem;
+  color: #942911;
 }
 
 #pm {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 5px;
+  bottom: 5px;
+  font-size: 1.25rem;
+  color: #942911;
 }
 
 #am {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 5px;
+  top: 5px;
+  font-size: 1.25rem;
+  color: #942911;
 }
 
 .hide {
   display: none;
 }
 
-/* //TODO  Fix clock box so that it does not change size based off number sizes
-//TODO finish styling page to look Good */
+/*//TODO finish styling page to look Good */
